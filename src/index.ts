@@ -26,7 +26,6 @@ function handleFinanceForSubmission(e: Event): void {
     } else {
         financialEntity = new Payment(person, details, amount, type);
     }
-    console.log(financialEntity);
     populateUi(financialEntity, financeList);
     financeForm.reset();
 }
